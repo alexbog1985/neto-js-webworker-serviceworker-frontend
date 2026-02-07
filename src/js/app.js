@@ -1,6 +1,10 @@
 import '../css/style.css';
 
+import BaseRender from './BaseRender';
+
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.querySelector('#root');
-  console.log('App started', root);
+  const app = new BaseRender(root);
+
+  app.init();
 });
