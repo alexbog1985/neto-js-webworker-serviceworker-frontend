@@ -1,10 +1,10 @@
 import '../css/style.css';
 
-import BaseRender from './BaseRender';
+import LoadingApp from './LoadingApp';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.querySelector('#root');
-  const app = new BaseRender(root);
+  const app = new LoadingApp(root);
 
   app.init();
 });
